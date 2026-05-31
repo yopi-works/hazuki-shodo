@@ -279,9 +279,9 @@
     }
 
     .about-text-inner p {
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       line-height: 2;
-      color: #555;
+      color: #111;
     }
 
     .about-tag {
@@ -313,7 +313,7 @@
     }
 
     .course-card {
-      background: var(--white);
+      background: url('washi_tate.png') center center / cover no-repeat;
       border-radius: 8px;
       padding: 2rem 1.5rem;
       text-align: center;
@@ -335,7 +335,7 @@
       transform: translateX(-50%);
       background: var(--gold);
       color: var(--white);
-      font-size: 0.75rem;
+      font-size: 1.05rem;
       font-weight: 700;
       padding: 0.2rem 1rem;
       border-radius: 20px;
@@ -359,23 +359,31 @@
     .course-price span { font-size: 1rem; font-weight: 400; }
 
     .course-target {
-      font-size: 0.85rem;
-      color: #777;
+      font-size: 1.05rem;
+      color: #111;
       margin-bottom: 1.2rem;
     }
 
     .course-details {
       list-style: none;
       text-align: left;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       line-height: 2;
-      color: #555;
+      color: #111;
+    }
+
+    .course-details li {
+      padding-left: 1.6em;
+      position: relative;
     }
 
     .course-details li::before {
-      content: "✓ ";
+      content: "✔";
       color: var(--gold);
-      font-weight: 700;
+      font-weight: 900;
+      font-size: 1.1em;
+      position: absolute;
+      left: 0;
     }
 
     /* 講師紹介 */
@@ -424,15 +432,15 @@
     }
 
     .teacher-title {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: var(--gold);
       margin-bottom: 1.2rem;
     }
 
     .teacher-bio {
       line-height: 2;
-      font-size: 0.95rem;
-      color: #555;
+      font-size: 1.05rem;
+      color: #111;
     }
     .teacher-bio p {
       margin-bottom: 0.2em;
@@ -469,7 +477,7 @@
 
     .faq-q::before {
       content: "Q";
-      background: var(--navy);
+      background: var(--gold);
       color: var(--white);
       width: 1.6rem;
       height: 1.6rem;
@@ -484,9 +492,9 @@
 
     .faq-a {
       padding: 0 1.5rem 1.2rem 4rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
       line-height: 1.9;
-      color: #555;
+      color: #111;
     }
 
     /* アクセス */
@@ -510,7 +518,7 @@
     .access-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.95rem;
+      font-size: 1.05rem;
     }
 
     .access-table tr {
@@ -519,16 +527,18 @@
 
     .access-table th {
       padding: 0.9rem 1rem 0.9rem 0;
-      color: #888;
-      font-weight: 500;
+      color: var(--gold);
+      font-weight: 700;
       white-space: nowrap;
       vertical-align: top;
       width: 5rem;
+      text-align: justify;
+      text-align-last: justify;
     }
 
     .access-table td {
       padding: 0.9rem 0;
-      color: var(--text);
+      color: #111;
       line-height: 1.7;
     }
 
